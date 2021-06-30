@@ -1,0 +1,45 @@
+.ProductPreview {
+    margin: 32px 0;
+    width: 288px;
+    height: 360px; 
+    cursor: pointer;
+    display: inline-block;
+}
+
+.Dark .ProductPreview:hover {
+    background-color: white;
+}
+
+.Light .ProductPreview:hover {
+    background-color: #F7F6F5;
+}
+
+.Light .ProductPreview:hover .Name, 
+.Dark .ProductPreview:hover .Name {
+    color: #000000;
+}
+
+.Image {
+    margin: 35px auto;
+    display: block;
+}
+
+.Name {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Barlow Condensed";
+    color: #9D9D9D;
+}
+
+.Price {
+    text-align: center;
+    font-family: inherit;
+    font-size: 32px;
+    color: #E4002B;
+    margin-bottom: 16px;
+}
+
+.Rub {
+    font-size: 24px;
+}

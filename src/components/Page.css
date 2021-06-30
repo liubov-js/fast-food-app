@@ -1,0 +1,18 @@
+.CategoryBlock {
+    width: 100%;
+}
+
+.Dark {
+    background-color: #F7F6F5;
+}
+
+.Light {
+    background-color: white;
+}
+
+.CategoryName {
+    font-family: "Barlow Condensed";
+    font-size: 32px;
+    display: flex;
+    color: #000000;
+}

@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1, 
+        "name": "Бургер",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/burger.png"
+    },
+    {
+        "id": 2, 
+        "name": "Бургер",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/burger.png"
+    },
+    {
+        "id": 3, 
+        "name": "Бургер",
+        "price": 144,
+        "delivery": false,
+        "img": "/images/burger.png"
+    },
+    {
+        "id": 4, 
+        "name": "Бургер",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/burger.png"
+    },
+    {
+        "id": 5, 
+        "name": "Бургер",
+        "price": 144,
+        "delivery": false,
+        "img": "/images/burger.png"
+    },
+    {
+        "id": 6, 
+        "name": "Бургер",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/burger.png"
+    },
+    {
+        "id": 7, 
+        "name": "Бургер",
+        "price": 144,
+        "delivery": false,
+        "img": "/images/burger.png"
+    },
+    {
+        "id": 8, 
+        "name": "Твистер",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/twister.png"
+    },
+    {
+        "id": 9, 
+        "name": "Твистер",
+        "price": 144,
+        "delivery": false,
+        "img": "/images/twister.png"
+    },
+    {
+        "id": 10, 
+        "name": "Твистер",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/twister.png"
+    },
+    {
+        "id": 11, 
+        "name": "Боксмастер",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/twister.png"
+    },
+    {
+        "id": 12, 
+        "name": "3 Стрипса",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/twister.png"
+    },
+    {
+        "id": 13, 
+        "name": "3 Стрипса",
+        "price": 144,
+        "delivery": false,
+        "img": "/images/twister.png"
+    },
+    {
+        "id": 14, 
+        "name": "3 Стрипса",
+        "price": 144,
+        "delivery": false,
+        "img": "/images/twister.png"
+    },
+    {
+        "id": 15, 
+        "name": "3 Стрипса",
+        "price": 144,
+        "delivery": true,
+        "img": "/images/twister.png"
+    }
+]
