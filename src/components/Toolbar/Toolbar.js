@@ -7,7 +7,7 @@ import DrawerToggle from './DrawerToggle/DrawerToggle';
 const toolbar = (props) => (
     <header className="Toolbar">
         <DrawerToggle  />
-        <div>Корзина</div>
+        <div className="Cart">Корзина</div>
         {/* <nav className="DesktopOnly">
             <NavigationItems />
         </nav> */}

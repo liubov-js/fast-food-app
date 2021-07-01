@@ -1,0 +1,19 @@
+.Header {
+    font-family: "Cabin Condensed";
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.Address {
+    font-family: "Barlow Condensed";
+    font-size: 32px;
+}
+
+.Input {
+    width: 210px;
+    height: 42px;
+    outline: none;
+    background: #F7F6F5;
+    border-radius: 4px;
+    border: none;
+}

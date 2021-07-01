@@ -1,23 +1,24 @@
 .Button {
-    border: none;
+    width: 146px;
+    height: 48px;
     color: white;
     outline: none;
     cursor: pointer;
-    font: inherit;
     padding: 10px;
-    margin: 10px;
-    font-weight: bold;
-}
-
-.Button:first-of-type {
-    margin-left: 0;
-    padding-left: 0;
+    font-family: "Abel";
+    font-size: 16px;
 }
 
 .Active {
-    color: #E4002B;
+    color: #FFFFFF;
+    background-color: #E4002B;
+    border: none;
+    border-radius: 4px;
 }
 
-.Passive {
-    color: #F7F6F5;
+.Inactive {
+    color: #9D9D9D;
+    background-color: #F7F6F5;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
 }

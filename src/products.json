@@ -81,27 +81,27 @@
         "name": "3 Стрипса",
         "price": 144,
         "delivery": true,
-        "img": "/images/twister.png"
+        "img": "/images/strips.png"
     },
     {
         "id": 13, 
         "name": "3 Стрипса",
         "price": 144,
         "delivery": false,
-        "img": "/images/twister.png"
+        "img": "/images/strips.png"
     },
     {
         "id": 14, 
         "name": "3 Стрипса",
         "price": 144,
         "delivery": false,
-        "img": "/images/twister.png"
+        "img": "/images/strips.png"
     },
     {
         "id": 15, 
         "name": "3 Стрипса",
         "price": 144,
         "delivery": true,
-        "img": "/images/twister.png"
+        "img": "/images/strips.png"
     }
 ]

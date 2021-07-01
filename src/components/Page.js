@@ -18,8 +18,7 @@ class Page extends Component {
     }
 
     render () {
-        const { products } = this.props;
-        const { categories } = this.props;
+        const { products, categories, isDelivery } = this.props;
 
         return (
             <div>
@@ -30,10 +29,12 @@ class Page extends Component {
                     {categories
                         .filter(category => category.products.length > 0)
                         .map((category, index) => 
-                            <div className={`CategoryBlock ${(index%2===0 ? "Dark" : "Light")}`}>
+                            <div className={`CategoryBlock ${(index % 2 === 0 ? "Dark" : "Light")}`}>
                                 <div className="CategoryName">{category.name}</div>
                                 {products
-                                    .filter(product => category.products.includes(product.id))
+                                    .filter(product => 
+                                        category.products.includes(product.id) && 
+                                        (isDelivery ? product.delivery : true))
                                     .map(product => <ProductPreview key={product.id} {...product}/>)
                                 }
                             </div>
@@ -48,6 +49,7 @@ const mapStateToProps = state => {
     return {
         products: state.products,
         categories: state.categories,
+        isDelivery: state.isDelivery,
     };
 };
 
@@ -55,6 +57,8 @@ const mapDispatchToProps = dispatch => {
     return {
         loadProducts: (products) => dispatch(actionCreators.loadProducts(products)),
         loadCategories: (categories) => dispatch(actionCreators.loadCategories(categories)),
+        chooseDelivery: () => dispatch(actionCreators.chooseDelivery()),
+        chooseTakeAway: () => dispatch(actionCreators.chooseTakeAway()),
     };
 };
 

@@ -3,6 +3,7 @@ import * as actionTypes from './actionTypes';
 const initialState = {
     categories: [],
     products: [],
+    isDelivery: true,
 }
 
 const reducer = (state = initialState, action) => {
@@ -16,6 +17,16 @@ const reducer = (state = initialState, action) => {
         return {
             ...state,
             products: action.payload,
+        }
+        case actionTypes.CHOOSE_DELIVERY:
+        return {
+            ...state,
+            isDelivery: true,
+        }
+        case actionTypes.CHOOSE_TAKEAWAY:
+        return {
+            ...state,
+            isDelivery: false,
         }
     }
     return state;
