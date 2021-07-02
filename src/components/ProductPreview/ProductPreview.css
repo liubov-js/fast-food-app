@@ -43,3 +43,9 @@
 .Rub {
     font-size: 24px;
 }
+
+@media (max-width: 690px) {
+    .ProductPreview {
+        width: 100%;
+    }
+}

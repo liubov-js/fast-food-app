@@ -1,16 +1,13 @@
 import React from 'react';
 
 import './Toolbar.css';
-// import NavigationItems from '../NavigationItems/NavigationItems';
-import DrawerToggle from './DrawerToggle/DrawerToggle';
 
 const toolbar = (props) => (
     <header className="Toolbar">
-        <DrawerToggle  />
-        <div className="Cart">Корзина</div>
-        {/* <nav className="DesktopOnly">
-            <NavigationItems />
-        </nav> */}
+        <img className="Menu" src="/images/BurgerMenu.png" clicked={props.menuClicked} />
+        <img className="Logo" src="/images/logo.png"  />
+
+        <div className="Cart">0₽<img className="CartIcon" src="/images/Basket.png" /></div>
     </header>
 );
 

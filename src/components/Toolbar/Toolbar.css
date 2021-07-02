@@ -1,36 +1,47 @@
 .Toolbar {
     height: 88px;
     width: 100%;
-    /* position: fixed; */
     top: 0;
     left: 2px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 100px;
     box-sizing: border-box;
     z-index: 90;
 }
 
-.Toolbar nav {
-    height: 100%;
+.Menu {
+    cursor: pointer;
+}
+
+.Logo {
+    position: absolute;
+    left: 45%;
+    top: 0px;
 }
 
 .Cart {
-    width: 80px;
-    height: 30px;
-    padding: 5px;
+    width: 82px;
+    height: 36px;
     font-family: "Cera Condensed Pro";
     font-size: 20px;
     color: #FFFFFF;
     background: #E4002B;
     border-radius: 18px;
     cursor: pointer;
+    text-align: center;
+    position: relative;
+    top: -5px;
 }
 
-@media (max-width: 499px) {
-    .DesktopOnly {
-        display: none;
+.CartIcon {
+    padding-top: 6px;
+}
+
+@media (max-width: 690px) {
+    .Toolbar {
+        padding: 0 30px;
     }
 }

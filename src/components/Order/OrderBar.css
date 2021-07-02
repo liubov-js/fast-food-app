@@ -1,12 +1,20 @@
+.OrderBar {
+    padding: 0 96px;
+}
+
 .Header {
     font-family: "Cabin Condensed";
     font-weight: bold;
     font-size: 64px;
+    float: left;
 }
 
 .Address {
     font-family: "Barlow Condensed";
     font-size: 32px;
+    display: flex;
+    align-items: center;
+    clear: both;
 }
 
 .Input {
@@ -16,4 +24,32 @@
     background: #F7F6F5;
     border-radius: 4px;
     border: none;
+    margin-left: 13px;
+}
+
+.House {
+    margin-left: 40px;
+}
+
+@media (max-width: 690px) {
+    .OrderBar {
+        padding: 0 30px;
+        padding-bottom: 10px;
+    }
+
+    .Header {
+        font-size: 35px;
+        float: none;
+        text-align: center;
+    }
+
+    .Address {
+        font-family: "Barlow Condensed";
+        font-size: 22px;
+        display: inline;
+    }
+
+    .Street {
+        margin-left: 40px;
+    }
 }

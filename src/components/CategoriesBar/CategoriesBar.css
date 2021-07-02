@@ -1,3 +1,11 @@
 .CategoriesBar {
     height: 64px;
+    padding: 0 96px;
+    clear: both;
+}
+
+@media (max-width: 850px) {
+    .CategoriesBar {
+        display: none;
+    }
 }

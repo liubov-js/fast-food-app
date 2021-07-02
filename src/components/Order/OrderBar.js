@@ -10,23 +10,25 @@ class OrderBar extends Component {
         const { isDelivery, chooseDelivery, chooseTakeAway } = this.props;
 
         return (
-            <div>
-                <Button className={`Button ${isDelivery ? "Active" : "Inactive"}`} onClick={chooseDelivery}>
-                    Доставка
-                </Button>
+            <div className="OrderBar">
                 <Button className={`Button ${!isDelivery ? "Active" : "Inactive"}`} onClick={chooseTakeAway}>
                     Самовывоз
+                </Button>
+                <Button className={`Button ${isDelivery ? "Active" : "Inactive"}`} onClick={chooseDelivery}>
+                    Доставка
                 </Button>
                 {
                     isDelivery ? 
                     <div>
-                        <h1 className="Header">Доставка г. Москва</h1>
-                        <p className="Address">Улица</p>
-                        <input className="Input" placeholder="Остоженка"/>
-                        <p className="Address">Дом</p>
-                        <input className="Input" placeholder="Остоженка"/>
+                        <div className="Header">Доставка г. Москва</div>
+                        <div className="Address">
+                            <p className="Street" >Улица</p>
+                            <input className="Input" placeholder="Остоженка" title="Нужно заполнить для оформления доставки"/>
+                            <p className="House">Дом</p>
+                            <input className="Input" placeholder="Остоженка"/>
+                        </div>
                     </div> : 
-                    <h1 className="Header">Самовывоз</h1>
+                    <div className="Header">Самовывоз</div>
                 }
             </div>
         );
