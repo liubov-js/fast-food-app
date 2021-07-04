@@ -32,7 +32,7 @@ class Page extends Component {
                         .map((category, index) => 
                             <div className={`CategoryBlock ${(index % 2 === 0 ? "Dark" : "Light")}`}>
                                 <a name={`category${category.id}`}/>
-                                <div className="CategoryName">{category.name}</div>
+                                <div key={category.id} className="CategoryName">{category.name}</div>
                                 {products
                                     .filter(product => 
                                         category.products.includes(product.id) && 

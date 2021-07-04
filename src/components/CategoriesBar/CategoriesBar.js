@@ -19,7 +19,7 @@ class CategoriesBar extends Component {
         return (
             <div className="CategoriesBar">
                 {categories.map(category => 
-                    <a href={`#category${category.id}`} className="Category">
+                    <a href={`#category${category.id}`} key={category.id} className="Category">
                         {category.name}
                     </a>
                 )}
