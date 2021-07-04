@@ -3,7 +3,6 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 
 import * as actionCreators from '../../store/actions';
-import Category from './Category/Category';
 import './CategoriesBar.css';
 
 class CategoriesBar extends Component {
@@ -19,7 +18,11 @@ class CategoriesBar extends Component {
 
         return (
             <div className="CategoriesBar">
-                {categories.map(category => <Category key={category.id} {...category}/>)}
+                {categories.map(category => 
+                    <a href={`#category${category.id}`} className="Category">
+                        {category.name}
+                    </a>
+                )}
             </div>
         );
     }

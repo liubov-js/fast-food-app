@@ -1,0 +1,106 @@
+.Footer {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.BottomLogo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.Circle {
+    margin: 0 auto;
+}
+
+.BottomBlock {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.SocialMediaBlock {
+    margin: 60px auto 0;
+    width: 260px;
+}
+
+.SocialMediaLink {
+    padding-left: 40px;
+}
+
+.StoreBlock {
+    float: right;
+    margin-top: -31px;
+}
+
+.Store {
+    padding-left: 16px;
+}
+
+.SectionsBlock {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 125px;
+}
+
+.Section {
+    display: inline-block;
+    width: 20%;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed";
+    font-size: 32px;
+    line-height: 2;
+    
+}
+
+.Subsection {
+    font-size: 16px;
+    list-style-type: none;
+}
+
+@media (max-width: 799px) {
+    .Footer {
+        padding: 0 30px;
+    }
+
+    .Circle {
+        display: none;
+    }
+
+    .SectionsBlock {
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 0;
+    }
+
+    .Section {
+        width: 100%;
+    }
+
+    .BottomBlock {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .SocialMediaBlock {
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: 220px;
+    }
+
+    .SocialMediaLink:nth-child(1) {
+        padding-left: 0;
+    }
+
+    .StoreBlock {
+        margin: 0 auto;
+    }
+
+    .Store:nth-child(1) {
+        padding-left: 0;
+    }
+}

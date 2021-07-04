@@ -3,10 +3,11 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 
 import * as actionCreators from '../store/actions';
-import ToolBar from './Toolbar/Toolbar';
+import Toolbar from './Toolbar/Toolbar';
 import OrderBar from './Order/OrderBar';
 import CategoriesBar from './CategoriesBar/CategoriesBar';
 import ProductPreview from './ProductPreview/ProductPreview';
+import Footer from '../Footer/Footer';
 import './Page.css';
 
 class Page extends Component {
@@ -22,7 +23,7 @@ class Page extends Component {
 
         return (
             <div>
-                <ToolBar />
+                <Toolbar />
                 <OrderBar/>
                 <CategoriesBar />
                 <div>
@@ -30,6 +31,7 @@ class Page extends Component {
                         .filter(category => category.products.length > 0)
                         .map((category, index) => 
                             <div className={`CategoryBlock ${(index % 2 === 0 ? "Dark" : "Light")}`}>
+                                <a name={`category${category.id}`}/>
                                 <div className="CategoryName">{category.name}</div>
                                 {products
                                     .filter(product => 
@@ -40,6 +42,7 @@ class Page extends Component {
                             </div>
                     )}
                 </div>
+                <Footer />
             </div>
         );
     }

@@ -2,6 +2,20 @@
     height: 64px;
     padding: 0 96px;
     clear: both;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.Category {
+    text-decoration: none;
+    color: #9D9D9D;
+    background-color: transparent;
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    margin-right: 10px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 @media (max-width: 850px) {
