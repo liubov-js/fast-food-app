@@ -44,10 +44,10 @@ class Footer extends Component {
                 </div>
                 <div className="BottomBlock">
                     <div className="SocialMediaBlock">
-                        <img className="SocialMediaLink" src="/images/vk.png" alt="Вконтакте" />
-                        <img className="SocialMediaLink" src="/images/facebook.png" alt="Facebook" />
-                        <img className="SocialMediaLink" src="/images/twitter.png" alt="Facebook" />
-                        <img className="SocialMediaLink" src="/images/ok.png" alt="Одноклассники" />
+                        <img className="SocialMediaLink" src="/images/social/vk.png" alt="Вконтакте" />
+                        <img className="SocialMediaLink" src="/images/social/facebook.png" alt="Facebook" />
+                        <img className="SocialMediaLink" src="/images/social/twitter.png" alt="Facebook" />
+                        <img className="SocialMediaLink" src="/images/social/ok.png" alt="Одноклассники" />
                     </div>
                     <div className="StoreBlock">
                         <img className="Store" src="/images/google_play.png" alt="Google Play" />

@@ -16,7 +16,7 @@ class Page extends Component {
     
     componentDidMount() {
         const { loadProducts } = this.props;
-        axios.get(`http://localhost:3001/products`)
+        axios.get(`/products`)
             .then((response) => loadProducts(response.data));
     }
 
