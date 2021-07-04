@@ -27,10 +27,10 @@ class Toolbar extends Component {
 
         return (
             <header className="Toolbar">
-                <img className="Menu" src="/images/BurgerMenu.png" onClick={this.openMenu} />
-                <img className="Logo" src="/images/logo.png"  />
+                <img className="Menu" src="/images/burger_menu.png" onClick={this.openMenu} alt="Меню" />
+                <img className="Logo" src="/images/logo.png" alt="Лого" />
                 <div className="Cart">
-                    <span className="TotalPrice">0₽</span><img className="CartIcon" src="/images/Basket.png" />
+                    <span className="TotalPrice">0₽</span><img className="CartIcon" src="/images/cart.png" alt="Корзина" />
                 </div>
                 {this.state.showMenu ? <div className="Categories" onClick={this.closeMenu}>
                     <ul>

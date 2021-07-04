@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
+
 import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
@@ -30,8 +32,11 @@ class Page extends Component {
                     {categories
                         .filter(category => category.products.length > 0)
                         .map((category, index) => 
-                            <div className={`CategoryBlock ${(index % 2 === 0 ? "Dark" : "Light")}`}>
-                                <a name={`category${category.id}`}/>
+                            <div
+                                className={`CategoryBlock ${(index % 2 === 0 ? "Dark" : "Light")}`}
+                                key={category.name}
+                            >
+                                <a name={`category${category.id}`} />
                                 <div key={category.id} className="CategoryName">{category.name}</div>
                                 {products
                                     .filter(product => 
