@@ -9,7 +9,7 @@ class CategoriesBar extends Component {
 
     componentDidMount() {
         const { loadCategories } = this.props;
-        axios.get('/categories')
+        axios.get('http://localhost:3001/categories')
             .then((response) => loadCategories(response.data));
     }
 

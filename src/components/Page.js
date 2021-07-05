@@ -9,14 +9,14 @@ import Toolbar from './Toolbar/Toolbar';
 import OrderBar from './Order/OrderBar';
 import CategoriesBar from './CategoriesBar/CategoriesBar';
 import ProductPreview from './ProductPreview/ProductPreview';
-import Footer from '../Footer/Footer';
+import Footer from './Footer/Footer';
 import './Page.css';
 
 class Page extends Component {
     
     componentDidMount() {
         const { loadProducts } = this.props;
-        axios.get(`/products`)
+        axios.get(`http://localhost:3001/products`)
             .then((response) => loadProducts(response.data));
     }
 
